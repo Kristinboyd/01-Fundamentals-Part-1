@@ -106,18 +106,42 @@
 
 // Coding Challenge #2
 // *************************************************************
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
-const bmiMark = massMark / heightMark ** 2;
-const bmiJohn = massJohn / heightJohn ** 2;
-console.log(bmiMark, bmiJohn);
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+// const bmiMark = massMark / heightMark ** 2;
+// const bmiJohn = massJohn / heightJohn ** 2;
+// console.log(bmiMark, bmiJohn);
+// if (bmiMark > bmiJohn) {
+//   console.log(
+//     `Mark's BMI (${bmiMark}) is higher than John's BMI (${bmiJohn})!`
+//   );
+// } else {
+//   console.log(`John's BMI (${bmiJohn}) is higher than Mark's BMI (${bmiMark})`);
+// }
 
-if (bmiMark > bmiJohn) {
-  console.log(
-    `Mark's BMI (${bmiMark}) is higher than John's BMI (${bmiJohn})!`
-  );
-} else {
-  console.log(`John's BMI (${bmiJohn}) is higher than Mark's BMI (${bmiMark})`);
-}
+// Type Conversion and Coercion
+// *************************************************************
+// Type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+console.log(Number(`Kristin`)); // NaN
+console.log(typeof NaN); // shows that NaN is still a number type
+console.log(String(23), 23);
+// Type Coercion
+console.log(`I am ` + 23 + ` years old`);
+// the plus symbol auto converts all numbers to strings
+console.log('23' - '10' - 3); // returns 10
+console.log(`23` + `10` + 3); // return string concatination 23103
+console.log(`23` * `2`); // returns 46
+console.log(`23` / `2`); // returns 11.5
+console.log(`23` > `18`); // returns true
+
+let n = `1` + 1;
+n = n - 1;
+console.log(n); // solution returns 10
+
+// Truthy and Falsy Values 
+// **************************************************************
