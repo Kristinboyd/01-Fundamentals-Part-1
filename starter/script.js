@@ -59,20 +59,23 @@
 
 // Strings and Template Literals
 // *************************************************************
-const firstName = 'Kristin';
-const job = 'Software Developer';
-const birthYear = 1992;
-const currentYear = 2021;
-const kristin =
-  "I'm " +
-  firstName +
-  ', a ' +
-  (currentYear - birthYear) +
-  ' year old ' +
-  job +
-  '!';
-console.log(kristin);
+// const firstName = 'Kristin';
+// const job = 'Software Developer';
+// const birthYear = 1992;
+// const currentYear = 2021;
+// // String example
+// const kristin =
+//   "I'm " +
+//   firstName +
+//   ', a ' +
+//   (currentYear - birthYear) +
+//   ' year old ' +
+//   job +
+//   '!';
+// console.log(kristin);
+// // Template Literal example
+// const kristinNew = `I'm ${firstName}, a ${currentYear -
+//   birthYear} year old ${job}!`;
+// console.log(kristinNew);
 
-const kristinNew = `I'm ${firstName}, a ${currentYear -
-  birthYear} year old ${job}!`;
-console.log(kristinNew);
+// Taking Decisions: if/else Statements 
