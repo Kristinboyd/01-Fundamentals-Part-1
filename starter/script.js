@@ -124,24 +124,43 @@
 // Type Conversion and Coercion
 // *************************************************************
 // Type Conversion
-const inputYear = '1991';
-console.log(Number(inputYear));
-console.log(Number(inputYear) + 18);
-console.log(Number(`Kristin`)); // NaN
-console.log(typeof NaN); // shows that NaN is still a number type
-console.log(String(23), 23);
-// Type Coercion
-console.log(`I am ` + 23 + ` years old`);
-// the plus symbol auto converts all numbers to strings
-console.log('23' - '10' - 3); // returns 10
-console.log(`23` + `10` + 3); // return string concatination 23103
-console.log(`23` * `2`); // returns 46
-console.log(`23` / `2`); // returns 11.5
-console.log(`23` > `18`); // returns true
+// const inputYear = '1991';
+// console.log(Number(inputYear));
+// console.log(Number(inputYear) + 18);
+// console.log(Number(`Kristin`)); // NaN
+// console.log(typeof NaN); // shows that NaN is still a number type
+// console.log(String(23), 23);
+// // Type Coercion
+// console.log(`I am ` + 23 + ` years old`);
+// // the plus symbol auto converts all numbers to strings
+// console.log('23' - '10' - 3); // returns 10
+// console.log(`23` + `10` + 3); // return string concatination 23103
+// console.log(`23` * `2`); // returns 46
+// console.log(`23` / `2`); // returns 11.5
+// console.log(`23` > `18`); // returns true
+// let n = `1` + 1;
+// n = n - 1;
+// console.log(n); // solution returns 10
 
-let n = `1` + 1;
-n = n - 1;
-console.log(n); // solution returns 10
-
-// Truthy and Falsy Values 
+// Truthy and Falsy Values
 // **************************************************************
+5 falsey values 0, ' ', undefined, null, NaN
+console.log(Boolean(0)); // returns false
+console.log(Boolean(undefined)); // returns false
+console.log(Boolean('Kristin')); // returns true beacuse it is not empty
+console.log(Boolean({})); // returns true
+const money = 110; // if money is 0 it will return falsy
+if (money) {
+  console.log(`Don' spend it all ;)`);
+} else {
+  console.log(`You should get a job!`);
+}
+const height = 123;
+if (height) {
+  console.log(`YAY! Height is defined`);
+} else {
+  console.log(`Height is UNDEFIND`);
+}
+
+// Equality Operators == vs ===
+// ***************************************************************
