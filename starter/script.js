@@ -78,4 +78,28 @@
 //   birthYear} year old ${job}!`;
 // console.log(kristinNew);
 
-// Taking Decisions: if/else Statements 
+// Taking Decisions: if/else Statements
+const age = 15;
+const isOldEnough = age >= 16;
+// One way
+if (isOldEnough) {
+  console.log('Kristin can start driving license');
+}
+// Another way
+if (age >= 16) {
+  console.log('Kristin can start driving license');
+} else {
+  const yearsLeft = 16 - age;
+  console.log(
+    `Kristin is not old enough to start driving license. She has ${yearsLeft} years left.`
+  );
+}
+
+const birthYear = 1992;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
