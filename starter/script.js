@@ -144,23 +144,48 @@
 
 // Truthy and Falsy Values
 // **************************************************************
-5 falsey values 0, ' ', undefined, null, NaN
-console.log(Boolean(0)); // returns false
-console.log(Boolean(undefined)); // returns false
-console.log(Boolean('Kristin')); // returns true beacuse it is not empty
-console.log(Boolean({})); // returns true
-const money = 110; // if money is 0 it will return falsy
-if (money) {
-  console.log(`Don' spend it all ;)`);
-} else {
-  console.log(`You should get a job!`);
-}
-const height = 123;
-if (height) {
-  console.log(`YAY! Height is defined`);
-} else {
-  console.log(`Height is UNDEFIND`);
-}
+// 5 falsey values 0, ' ', undefined, null, NaN
+// console.log(Boolean(0)); // returns false
+// console.log(Boolean(undefined)); // returns false
+// console.log(Boolean('Kristin')); // returns true beacuse it is not empty
+// console.log(Boolean({})); // returns true
+// const money = 110; // if money is 0 it will return falsy
+// if (money) {
+//   console.log(`Don' spend it all ;)`);
+// } else {
+//   console.log(`You should get a job!`);
+// }
+// const height = 123;
+// if (height) {
+//   console.log(`YAY! Height is defined`);
+// } else {
+//   console.log(`Height is UNDEFIND`);
+// }
 
 // Equality Operators == vs ===
 // ***************************************************************
+// === does not perform type coercion, just performs comparision, strict
+const age = 18;
+if (age === 18) {
+  console.log(`You are 18 years old! (strict)`);
+}
+// or
+if (age === 18) console.log(`You are 18 years old! (strict)`);
+// == performs type coercion, loose, avoid as often as possible
+'18' == 18; // returns true
+if (age == 18) console.log(`You are 18 years old! (loose)`);
+
+const favorite = Number(prompt(`What's your favorite number?`));
+console.log(favorite);
+// strings always print in white
+if (favorite === 23) {
+  console.log(`cool! 23 is an amazing number!`);
+} else if (favorite === 7) {
+  console.log(`7 is also a cool number!`);
+} else {
+  console.log(`number is not 23 or 7!`);
+}
+
+if (favorite !== 23) {
+  console.log(`Why not 23?`);
+}
