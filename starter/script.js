@@ -79,27 +79,45 @@
 // console.log(kristinNew);
 
 // Taking Decisions: if/else Statements
-const age = 15;
-const isOldEnough = age >= 16;
-// One way
-if (isOldEnough) {
-  console.log('Kristin can start driving license');
-}
-// Another way
-if (age >= 16) {
-  console.log('Kristin can start driving license');
-} else {
-  const yearsLeft = 16 - age;
-  console.log(
-    `Kristin is not old enough to start driving license. She has ${yearsLeft} years left.`
-  );
-}
+// *************************************************************
+// const age = 15;
+// const isOldEnough = age >= 16;
+// // One way
+// if (isOldEnough) {
+//   console.log('Kristin can start driving license');
+// }
+// // Another way
+// if (age >= 16) {
+//   console.log('Kristin can start driving license');
+// } else {
+//   const yearsLeft = 16 - age;
+//   console.log(
+//     `Kristin is not old enough to start driving license. She has ${yearsLeft} years left.`
+//   );
+// }
+// const birthYear = 1992;
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(century);
 
-const birthYear = 1992;
-let century;
-if (birthYear <= 2000) {
-  century = 20;
+// Coding Challenge #2
+// *************************************************************
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+const bmiMark = massMark / heightMark ** 2;
+const bmiJohn = massJohn / heightJohn ** 2;
+console.log(bmiMark, bmiJohn);
+
+if (bmiMark > bmiJohn) {
+  console.log(
+    `Mark's BMI (${bmiMark}) is higher than John's BMI (${bmiJohn})!`
+  );
 } else {
-  century = 21;
+  console.log(`John's BMI (${bmiJohn}) is higher than Mark's BMI (${bmiMark})`);
 }
-console.log(century);
