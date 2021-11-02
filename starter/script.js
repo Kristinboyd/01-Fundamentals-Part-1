@@ -165,27 +165,36 @@
 // Equality Operators == vs ===
 // ***************************************************************
 // === does not perform type coercion, just performs comparision, strict
-const age = 18;
-if (age === 18) {
-  console.log(`You are 18 years old! (strict)`);
-}
-// or
-if (age === 18) console.log(`You are 18 years old! (strict)`);
-// == performs type coercion, loose, avoid as often as possible
-'18' == 18; // returns true
-if (age == 18) console.log(`You are 18 years old! (loose)`);
+// const age = 18;
+// if (age === 18) {
+//   console.log(`You are 18 years old! (strict)`);
+// }
+// // or
+// if (age === 18) console.log(`You are 18 years old! (strict)`);
+// // == performs type coercion, loose, avoid as often as possible
+// '18' == 18; // returns true
+// if (age == 18) console.log(`You are 18 years old! (loose)`);
 
-const favorite = Number(prompt(`What's your favorite number?`));
-console.log(favorite);
-// strings always print in white
-if (favorite === 23) {
-  console.log(`cool! 23 is an amazing number!`);
-} else if (favorite === 7) {
-  console.log(`7 is also a cool number!`);
-} else {
-  console.log(`number is not 23 or 7!`);
-}
+// const favorite = Number(prompt(`What's your favorite number?`));
+// console.log(favorite);
+// // strings always print in white
+// if (favorite === 23) {
+//   console.log(`cool! 23 is an amazing number!`);
+// } else if (favorite === 7) {
+//   console.log(`7 is also a cool number!`);
+// } else {
+//   console.log(`number is not 23 or 7!`);
+// }
 
-if (favorite !== 23) {
-  console.log(`Why not 23?`);
-}
+// if (favorite !== 23) {
+//   console.log(`Why not 23?`);
+// }
+
+// Boolean Logic
+// ****************************************************************
+// AND logic >>> they all must be TRUE to work 
+// OR logic >>> one must be TRUE to work 
+// NOT logic >>> one must be FALSE to work 
+
+// Locical Operators 
+// ****************************************************************
