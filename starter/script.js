@@ -234,41 +234,52 @@
 // The Switch Statement
 // *****************************************************************
 // switch statement example
-const day = 'monday';
-switch (day) {
-  case 'monday': // if day === Monday ? then code executes
-    console.log(`plan course structure`);
-    console.log(`Go to coding meetup`);
-    break;
-  case 'tuesday':
-    console.log(`Prepare therory videos`);
-    break;
-  case 'wednesday':
-  case 'thursday':
-    console.log(`Write code examples`);
-    break;
-  case 'friday':
-    console.log(`Record videos`);
-    break;
-  case 'saturday':
-  case 'sunday':
-    console.log(`Enjoy the weekend`);
-    break;
-  default:
-    console.log(`Not a valid day!`);
+// const day = 'monday';
+// switch (day) {
+//   case 'monday': // if day === Monday ? then code executes
+//     console.log(`plan course structure`);
+//     console.log(`Go to coding meetup`);
+//     break;
+//   case 'tuesday':
+//     console.log(`Prepare therory videos`);
+//     break;
+//   case 'wednesday':
+//   case 'thursday':
+//     console.log(`Write code examples`);
+//     break;
+//   case 'friday':
+//     console.log(`Record videos`);
+//     break;
+//   case 'saturday':
+//   case 'sunday':
+//     console.log(`Enjoy the weekend`);
+//     break;
+//   default:
+//     console.log(`Not a valid day!`);
+// }
+// // using if else statement instead of switch statement
+// if (day === 'monday') {
+//   console.log(`plan course structure`);
+//   console.log(`Go to coding meetup`);
+// } else if (day === 'tuesday') {
+//   console.log(`Prepare therory videos`);
+// } else if (day === 'wednesday' || day === 'thursday') {
+//   console.log(`Write code examples`);
+// } else if (day === 'friday') {
+//   console.log(`Record videos`);
+// } else if (day === 'saturday' || day === 'sunday') {
+//   console.log(`Enjoy the weekend`);
+// } else {
+//   console.log(`Not a valid day`);
+// }
+
+// Statements and Expressions
+// ****************************************************************
+// Statement is a bigger piece of code that is executed and does not produce a value on itself
+// Expression is a piece of code that produces a value
+// 3 + 4, 1991, true, false is an expression because it will produce a value
+// statement example
+if (23 > 10) {
+  const str = '23 is bigger';
 }
-// using if else statement instead of switch statement
-if (day === 'monday') {
-  console.log(`plan course structure`);
-  console.log(`Go to coding meetup`);
-} else if (day === 'tuesday') {
-  console.log(`Prepare therory videos`);
-} else if (day === 'wednesday' || day === 'thursday') {
-  console.log(`Write code examples`);
-} else if (day === 'friday') {
-  console.log(`Record videos`);
-} else if (day === 'saturday' || day === 'sunday') {
-  console.log(`Enjoy the weekend`);
-} else {
-  console.log(`Not a valid day`);
-}
+console.log(`I'm ${2021 - 1992} years old`); // this is using an expression because it produces a value
