@@ -279,7 +279,21 @@
 // Expression is a piece of code that produces a value
 // 3 + 4, 1991, true, false is an expression because it will produce a value
 // statement example
-if (23 > 10) {
-  const str = '23 is bigger';
-}
-console.log(`I'm ${2021 - 1992} years old`); // this is using an expression because it produces a value
+// if (23 > 10) {
+//   const str = '23 is bigger';
+// }
+// console.log(`I'm ${2021 - 1992} years old`); // this is using an expression because it produces a value
+
+// The Conditional (Ternary) Operator
+// ****************************************************************
+// if the first part is untrue, the second part executes
+// const age = 29;
+// // write it like this
+// age >= 21
+//   ? console.log(`I like to drink wine`)
+//   : console.log(`I like to drink water`);
+// // or simplify it and write it like this
+// console.log(`I like to drink ${age >= 21 ? 'wine' : 'water'}`);
+
+// Coding Challenge #4
+// ****************************************************************
