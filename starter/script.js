@@ -198,26 +198,38 @@
 
 // Locical Operators
 // ****************************************************************
-
-const hasDriversLicense = true; // A variable
-const hasGoodVision = true; // B variable
-
-console.log(hasDriversLicense && hasGoodVision); // returns true
-console.log(hasDriversLicense || hasGoodVision); // returns true
-console.log(!hasDriversLicense, !hasGoodVision); // returns false
-
-const shouldDrive = hasDriversLicense && hasGoodVision;
-if (shouldDrive) {
-  console.log(`Kristin is able to drive`);
-} else {
-  console.log(`Someone else should drive`);
-} // returns Krisitn is able to drive if true
-
+// const hasDriversLicense = true; // A variable
+// const hasGoodVision = true; // B variable
+// console.log(hasDriversLicense && hasGoodVision); // returns true
+// console.log(hasDriversLicense || hasGoodVision); // returns true
+// console.log(!hasDriversLicense, !hasGoodVision); // returns false
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+// if (shouldDrive) {
+//   console.log(`Kristin is able to drive`);
+// } else {
+//   console.log(`Someone else should drive`);
+// } // returns Krisitn is able to drive if true
+// // const isTired = true; // C variable
+// // console.log(hasDriversLicense || hasGoodVision || isTired); // returns true
+// // const isTired = false; // C variable
+// // console.log(hasDriversLicense && hasGoodVision && isTired); // returns false
 // const isTired = true; // C variable
-// console.log(hasDriversLicense || hasGoodVision || isTired); // returns true
+// console.log(hasDriversLicense && hasGoodVision && !isTired); // returns false
 
-// const isTired = false; // C variable
-// console.log(hasDriversLicense && hasGoodVision && isTired); // returns false
+// Coding Challenge #3
+// ****************************************************************
+// find the average of the teams scores
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas); // priont the teams averages
+// // create an else if statement to determine the winners
+// if (scoreDolphins > scoreKoalas) {
+//   console.log(`Dolphins win the trophy!`);
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log(`Koalas win the trophy!`);
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log(`Both teams win the trophy!`);
+// }
 
-const isTired = true; // C variable
-console.log(hasDriversLicense && hasGoodVision && !isTired); // returns false
+// The Switch Statement 
+// *****************************************************************
