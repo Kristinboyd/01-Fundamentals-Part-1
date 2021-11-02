@@ -192,9 +192,32 @@
 
 // Boolean Logic
 // ****************************************************************
-// AND logic >>> they all must be TRUE to work 
-// OR logic >>> one must be TRUE to work 
-// NOT logic >>> one must be FALSE to work 
+// AND logic && >>> they all must be TRUE to work
+// OR logic || >>> one must be TRUE to work
+// NOT logic ! >>> one must be FALSE to work
 
-// Locical Operators 
+// Locical Operators
 // ****************************************************************
+
+const hasDriversLicense = true; // A variable
+const hasGoodVision = true; // B variable
+
+console.log(hasDriversLicense && hasGoodVision); // returns true
+console.log(hasDriversLicense || hasGoodVision); // returns true
+console.log(!hasDriversLicense, !hasGoodVision); // returns false
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+if (shouldDrive) {
+  console.log(`Kristin is able to drive`);
+} else {
+  console.log(`Someone else should drive`);
+} // returns Krisitn is able to drive if true
+
+// const isTired = true; // C variable
+// console.log(hasDriversLicense || hasGoodVision || isTired); // returns true
+
+// const isTired = false; // C variable
+// console.log(hasDriversLicense && hasGoodVision && isTired); // returns false
+
+const isTired = true; // C variable
+console.log(hasDriversLicense && hasGoodVision && !isTired); // returns false
